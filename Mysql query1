@@ -36,7 +36,7 @@ select concat(Name,'(',Substring(Occupation,1,1),')') as Name
 from occupations
 Order by Name
 ;
-SELECT "There are total", COUNT(OCCUPATION), concat(LOWER(OCCUPATION),"s.") 
+SELECT "There are a total of ", count(OCCUPATION), concat(lower(occupation),"s.") 
 FROM OCCUPATIONS 
 GROUP BY OCCUPATION 
-ORDER BY COUNT(OCCUPATION) ASC, OCCUPATION ASC;
+ORDER BY count(OCCUPATION), OCCUPATION ASC
