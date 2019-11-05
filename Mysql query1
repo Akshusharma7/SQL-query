@@ -40,3 +40,23 @@ SELECT "There are a total of ", count(OCCUPATION), concat(lower(occupation),"s."
 FROM OCCUPATIONS 
 GROUP BY OCCUPATION 
 ORDER BY count(OCCUPATION), OCCUPATION ASC
+
+
+Second Way to solve using UNION : 
+
+(SELECT CONCAT(initial.name, '(', initial.init, ')')
+ FROM (
+     SELECT name, LEFT(occupation, 1) as init
+     FROM Occupations
+     ORDER BY 1
+     ) initial
+)
+UNION
+(SELECT CONCAT('There are a total of ', count.num_occup, ' ', lower(count.occupation),'s.')
+ FROM (
+     SELECT occupation, count(*) as num_occup
+     FROM Occupations
+     GROUP BY 1
+     ORDER BY 2,1
+     ) count
+);
