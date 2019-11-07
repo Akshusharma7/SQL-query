@@ -6,6 +6,7 @@ output :
 email               name      domain
 ram123@gmail.com    ram123    gmail.com
 
+
 -------------------------------
 select email substring_index(substring_index(email,'@',-1),'.',1) as domain_name
 from emailaddr
