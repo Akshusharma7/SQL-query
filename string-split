@@ -14,3 +14,12 @@ from emailaddr
 output:
 email               domain_name  
 ram123@gmail.com    gmail
+
+------------------------------
+
+select email, substring_index(email,'@',2) as name
+from emailaddr
+
+output : 
+email               name
+abc@def@gmail.com   abc@def
