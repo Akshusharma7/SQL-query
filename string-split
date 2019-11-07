@@ -1,0 +1,15 @@
+Find the user name and domain from email table.
+
+select email, substring_index(email,'@',1) as name, substring_index(email,'@',-1) as domain
+from emailaddr
+output : 
+email               name      domain
+ram123@gmail.com    ram123    gmail.com
+
+-------------------------------
+select email substring_index(substring_index(email,'@',-1),'.',1) as domain_name
+from emailaddr
+
+output:
+email               domain_name  
+ram123@gmail.com    gmail
