@@ -1,0 +1,8 @@
+Find the Nth highest salary 
+
+1. 2nd Higest salary
+with RESULT as (
+  select salary, dense_rank() over(order by salary desc) as densrank
+  from salaries )
+select salary from RESULT
+where RESULT.densrank = 2;
