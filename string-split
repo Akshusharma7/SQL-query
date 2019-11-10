@@ -25,5 +25,7 @@ email               name
 abc@def@gmail.com   abc@def
 
 
-select emalid, substring_index(emalid, '@',1) as valid, substring_index(emalid, '@', -1) as two
+select emalid, 
+      substring_index(emalid, '@',1) as valid,
+      substring_index(emalid, '@', -1) as Domain
 from email;
