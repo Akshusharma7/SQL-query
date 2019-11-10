@@ -12,3 +12,9 @@ select salary from salaries s1
 where 1 = (select count(distinct salary)
 from salaries s2
 where s2.salary > s1.salary)
+
+
+2. Top 5 salary records
+select salary from salaries
+order by salary desc
+limit 5
