@@ -17,7 +17,6 @@ THEN
         END 
         ELSE 'Not A Triangle' 
         END 
-        
 FROM TRIANGLES;
 
 
