@@ -17,4 +17,5 @@ where s2.salary > s1.salary)
 2. Top 5 salary records
 
 select salary from salaries
-order by salary desc limit 5;
+order by salary desc
+limit 5;
