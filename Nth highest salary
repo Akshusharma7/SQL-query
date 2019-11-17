@@ -18,4 +18,5 @@ where s2.salary > s1.salary)
 
 select salary from salaries
 order by salary desc
+
 limit 5;
