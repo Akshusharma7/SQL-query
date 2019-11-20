@@ -6,7 +6,6 @@ with RESULT as (
   from salaries )
 select salary from RESULT
 where RESULT.densrank = 2;
-
         "OR"
 select salary from salaries s1
 where 1 = (select count(distinct salary)
