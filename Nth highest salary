@@ -1,6 +1,5 @@
 Find the Nth highest salary 
 
-
 1. 2nd Higest salary
 with RESULT as (
   select salary, dense_rank() over(order by salary desc) as densrank
@@ -12,6 +11,9 @@ select salary from salaries s1
 where 1 = (select count(distinct salary)
 from salaries s2
 where s2.salary > s1.salary)
+
+
+
 
 
 2. Top 5 salary records
