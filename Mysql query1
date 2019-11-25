@@ -51,6 +51,7 @@ Second Way to solve using UNION :
      ) initial
 )
 UNION
+
 (SELECT CONCAT('There are a total of ', count.num_occup, ' ', lower(count.occupation),'s.')
  FROM (
      SELECT occupation, count(*) as num_occup
