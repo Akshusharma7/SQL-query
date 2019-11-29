@@ -4,9 +4,19 @@ Input Format
 
 The STATION table is described as follows:
 
+Field       Type
+ID        NUMBER(10)
+CITY      VARCHAR(20)
+STATE     VARCHAR(20)
+LAT_N     NUMBER(10)
+LAT_W     NUMBER(10)
+
+
 
 where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 
 1. QUERY:
 select distinct city from station where upper(substr(city,-1)) in ('A','E','I','O','U');
+
+
