@@ -13,10 +13,19 @@ LAT_W     NUMBER(10)
 
 where LAT_N is the northern latitude and LONG_W is the western longitude.
 
-QUERY:
-
+1. QUERY:
 SELECT DISTINCT city FROM station WHERE city REGEXP "^[aeiou].*";
 
+2. QUERY : 
+select distinct case 
+when city like 'a%' then city
+when city like 'e%' then city
+when city like 'i%' then city
+when city like 'o%' then city
+when city like 'u%' then city
+else 'na'
+end
+from station
 
 
 
