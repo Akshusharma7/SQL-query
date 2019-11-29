@@ -20,7 +20,7 @@ SELECT DISTINCT city FROM station WHERE city REGEXP "^[aeiou].*";
 
 
 
-PATTERN	    WHAT THE PATTERN MATCHES
+PATTERN	    WHAT THE PATTERN MATCHES: 
 *	           Zero or more instances of string preceding it
 +	           One or more instances of strings preceding it
 .          	Any single character
