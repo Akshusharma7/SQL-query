@@ -1,0 +1,18 @@
+Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
+
+Input Format
+
+The STATION table is described as follows:
+
+Field       Type
+ID        NUMBER(10)
+CITY      VARCHAR(20)
+STATE     VARCHAR(20)
+LAT_N     NUMBER(10)
+LAT_W     NUMBER(10)
+
+where LAT_N is the northern latitude and LONG_W is the western longitude.
+
+QUERY:
+
+SELECT DISTINCT city FROM station WHERE city REGEXP "^[aeiou].*";
