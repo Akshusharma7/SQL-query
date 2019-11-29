@@ -8,6 +8,7 @@ Not A Triangle: The given values of A, B, and C don't form a triangle.
 
 Query : 
 
+
 SELECT 
 CASE WHEN A + B > C AND A+C>B AND B+C>A 
 THEN
