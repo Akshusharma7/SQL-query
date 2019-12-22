@@ -7,11 +7,11 @@ Here is the problem definition:
 
 For example, 
 Scenario 1: If we pass David's EmployeeId to the query, then it should display the organization hierarchy starting from David.
-
 Scenario 2: If we pass Lara's EmployeeId to the query, then it should display the organization hierarchy starting from Lara.
 
 
 --QUERY  : 
+
 Declare @ID int;
 Set @ID = 7;
 
