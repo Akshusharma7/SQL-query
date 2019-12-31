@@ -4,6 +4,7 @@ Input Format
 
 The STATION table is described as follows:
 
+
 Field       Type
 ID        NUMBER(10)
 CITY      VARCHAR(20)
