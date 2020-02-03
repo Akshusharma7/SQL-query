@@ -17,7 +17,6 @@ where s2.salary > s1.salary)
 
 
 
-
 2. Top 5 salary records
 
 select salary from salaries
