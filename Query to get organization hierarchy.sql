@@ -14,6 +14,7 @@
 
 --QUERY  : 
 
+
 Declare @ID int;
 Set @ID = 7;
 
