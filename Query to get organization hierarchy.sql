@@ -7,7 +7,6 @@
 --    c) ManagerId 
 --2. If an EmployeeId is passed, the query should list down the entire organization hierarchy i.e who is the manager of the EmployeeId passed and who is managers manager and so on till full hierarchy is listed.
 
-
 --For example, 
 --Scenario 1: If we pass David's EmployeeId to the query, then it should display the organization hierarchy starting from David.
 --Scenario 2: If we pass Lara's EmployeeId to the query, then it should display the organization hierarchy starting from Lara.
