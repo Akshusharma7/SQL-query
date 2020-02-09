@@ -31,6 +31,7 @@ With EmployeeCTE AS
 	ON Employees.EmployeeID =EmployeeCTE.ManagerID
 )
 
+
 select E1.EmployeeName, ISNULL(E2.EmployeeName, 'No Boss') as ManagerName
 from EmployeeCTE E1
 Left Join EmployeeCTE E2
