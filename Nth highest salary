@@ -9,6 +9,8 @@ with RESULT as (
 select salary from RESULT
 where RESULT.densrank = 2;
 
+
+
         "OR"
         
 select salary from salaries s1
@@ -18,7 +20,7 @@ where s2.salary > s1.salary)
 
 
 
-2. Top 5 salary records
+2. Top 5 salary records pull
 
 
 select salary from salaries
